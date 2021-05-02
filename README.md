@@ -1,6 +1,6 @@
 # riddle-cli
 
-- You do the following command. After that, 'go-cli' command was created in /bin.
+- You do the following command. After that, 'go-cli' command is created in /bin.
 ```
 go install
 ```
