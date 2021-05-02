@@ -35,13 +35,13 @@ func main() {
 
 	app.Commands = []*cli.Command{
 		{
-			Name: "riddle",
+			Name:    "riddle",
 			Aliases: []string{"r"},
-			Usage: "riddle --num 1 (Choose a number from 1 to 9.)",
+			Usage:   "riddle --num 1 (Choose a number from 1 to 9.)",
 			Flags: []cli.Flag{
 				&cli.StringFlag{
-					Name: "num",
-					Usage: "--num 1 (Choose a number from 1 to 9.)",
+					Name:        "num",
+					Usage:       "--num 1 (Choose a number from 1 to 9.)",
 					Destination: &riddleNum,
 				},
 			},
@@ -73,13 +73,13 @@ func main() {
 			},
 		},
 		{
-			Name: "answer",
+			Name:    "answer",
 			Aliases: []string{"a"},
-			Usage: "answer --num 1 (Choose a number from 1 to 9.)",
+			Usage:   "answer --num 1 (Choose a number from 1 to 9.)",
 			Flags: []cli.Flag{
 				&cli.StringFlag{
-					Name: "num",
-					Usage: "--num 1 (Choose a number from 1 to 9.)",
+					Name:        "num",
+					Usage:       "--num 1 (Choose a number from 1 to 9.)",
 					Destination: &ansNum,
 				},
 			},
@@ -108,7 +108,7 @@ func main() {
 					fmt.Println("Reason: 'O''hi'(high)'o'")
 				case "8":
 					fmt.Println("Answer: Teapot")
-					fmt.Println("Reason: 'Teapot' is spelled starting with a 'T' and ending with a 'T'.'T' and 'Tea'")
+					fmt.Println("Reason: 'Teapot' is spelled starting with a 'T' and ending with a 'T'. The teapot is full of 'tea'.")
 				case "9":
 					fmt.Println("Answer: Candle")
 					fmt.Println("Reason: The more you use a candle, the shorter it becomes.")
