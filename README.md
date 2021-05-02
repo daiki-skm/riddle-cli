@@ -1,1 +1,1 @@
-# quiz-cli
+# riddle-cli
