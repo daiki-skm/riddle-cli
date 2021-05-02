@@ -1,1 +1,1 @@
-# common-story-cli
+# quiz-cli
