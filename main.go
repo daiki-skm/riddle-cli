@@ -20,12 +20,12 @@ func main() {
 	//	&cli.StringFlag{
 	//		Name: "riddle",
 	//		Usage: "Give a riddle.",
-	//		Destination: &num,
+	//		Destination: &riddleNum,
 	//	},
 	//	&cli.StringFlag{
 	//		Name: "answer",
-	//		Usage: "Give a answer.",
-	//		Destination: &ansnum,
+	//		Usage: "Give an answer.",
+	//		Destination: &ansNum,
 	//	},
 	//}
 
@@ -35,13 +35,13 @@ func main() {
 
 	app.Commands = []*cli.Command{
 		{
-			Name:    "riddle",
+			Name: "riddle",
 			Aliases: []string{"r"},
-			Usage:   "riddle --num 1 (Choose a number from 1 to 9.)",
+			Usage: "riddle --num 1 (Choose a number from 1 to 9.)",
 			Flags: []cli.Flag{
 				&cli.StringFlag{
-					Name:        "num",
-					Usage:       "--num 1 (Choose a number from 1 to 9.)",
+					Name: "num",
+					Usage: "--num 1 (Choose a number from 1 to 9.)",
 					Destination: &riddleNum,
 				},
 			},
@@ -73,13 +73,13 @@ func main() {
 			},
 		},
 		{
-			Name:    "answer",
+			Name: "answer",
 			Aliases: []string{"a"},
-			Usage:   "answer --num 1 (Choose a number from 1 to 9.)",
+			Usage: "answer --num 1 (Choose a number from 1 to 9.)",
 			Flags: []cli.Flag{
 				&cli.StringFlag{
-					Name:        "num",
-					Usage:       "--num 1 (Choose a number from 1 to 9.)",
+					Name: "num",
+					Usage: "--num 1 (Choose a number from 1 to 9.)",
 					Destination: &ansNum,
 				},
 			},
