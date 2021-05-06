@@ -1,4 +1,4 @@
-# riddle-cli
+# riddle cli
 
 - You do the following command. After that, 'go-cli' command is created in /bin.
 ```
